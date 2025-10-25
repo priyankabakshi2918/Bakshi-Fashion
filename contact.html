@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakshi Fashions</title>
+    <link rel="stylesheet" href="indexcss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!------google fonts website-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+<!----font awesome website-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+   <section class="sub-header">
+   <nav>
+
+       <!----first view of webpage-->
+       <a href="indexhtml.html"><img src="./Assets/logo.png"> </a>
+       <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        
+        <!-----All Vertical Columns-->
+           <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="products.html">PRODUCTS</a></li>
+               <li><a href="about.html">ABOUT</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+               <li><a href="account.html">ACCOUNT</a></li>
+            </ul>
+       </div>
+       <i class="fa fa-bars" onclick="showMenu()"></i>
+   </nav>
+    
+       <!-----Header of About Webpage-->
+   <h1>Contact Us</h1>
+   </section>
+
+  <!----------Content of cotact us------>
+
+  <section class="location">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55086.63668772332!2d76.80301968954626!3d30.35337140012303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fb6482e623f7b%3A0x1814169a97109fae!2sAmbala%20Cantt%2C%20Haryana!5e0!3m2!1sen!2sin!4v1653063526850!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+</section>
+
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <img src="./Assets/home.png" height=50>
+                <span>
+                    <h5>XYZ Road, ABC Building</h5>
+                    <p>Banglore, Karnataka, IN</p>
+                </span>
+            </div>
+            <div>
+                <img src="./Assets/phone.png" height="50">
+                <span>
+                    <h5>+1 0123456789</h5>
+                    <p>Monday to Saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <img src="./Assets/envelope.png" height="40">
+                <span>
+                    <h5>info@bakshifashions.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+
+
+        <div class="contact-col">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+
+
+        </div>
+    </div>
+</section>
+
+
+    <!----Footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quo temporibus accusamus tenetur <br> voluptate commodi doloremque fugit autem architecto ipsam!</p>
+      <img src="./Assets/social.png" height="60">
+     <p>Made By Priyanka</p>
+    </section>
+
+
+    <!------------Javascript for small device menu-->
+    <script>
+            
+        var navLinks= document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="-200px";
+        }
+
+   </script>
+
+   
+</body>
+</html>
